@@ -25,6 +25,9 @@ Route::get('/bootmodal', function () {
     return view('bootmodal',['title'=>'this is cool website']);
 });
 
+Route::get('/sun', function () {
+    return view('sun',['title'=>'My Laravel Website']);
+});
 
 Auth::routes();
 
