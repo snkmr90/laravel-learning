@@ -17,6 +17,16 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
+Route::get('/home', function () {
+    return view('home',['title'=>'test']);
+});
+Route::get('/bootmodal', function () {
+    return view('bootmodal',['title'=>'this is cool website']);
+});
+
+
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+//Route::get('/home', 'HomeController@index')->name('home');
+//Route::get('/bootmodal', 'HomeController@bootModal')->name('bootmodal');
